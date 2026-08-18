@@ -4,38 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Anotações">
+  <meta name="application-name" content="Anotações">
   <meta name="theme-color" content="#f5f5f7">
-
   <title>Anotações</title>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/igorhashimoto-boop/Anotacoes/main/anotacoes-iphone-180.png">
-  <link rel="icon" type="image/png" sizes="180x180" href="https://raw.githubusercontent.com/igorhashimoto-boop/Anotacoes/main/anotacoes-iphone-180.png">
-
-  <script>
-    window.location.replace("https://script.google.com/macros/s/AKfycbyzogSeB7XJhvaPfOFL6yA53YiiJcSMKbeyVlhJ99z-EU4lvXJ2ipss0RgZNA8ePRU/exec");
-  </script>
+  <!-- Arquivo LOCAL na raiz do GitHub Pages -->
+  <link rel="apple-touch-icon" href="./anotacoes-iphone-180.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./anotacoes-iphone-180.png">
+  <link rel="icon" type="image/png" sizes="180x180" href="./anotacoes-iphone-180.png">
 
   <style>
-    html, body {
-      margin: 0;
-      width: 100%;
-      height: 100%;
-      background: #f5f5f7;
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Arial, sans-serif;
+    *{box-sizing:border-box}
+    html,body{
+      margin:0;
+      min-height:100%;
+      background:#f5f5f7;
+      color:#171717;
+      font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Arial,sans-serif;
     }
-    .wrap {
-      min-height: 100dvh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #666;
-      font-size: 15px;
+    .page{
+      min-height:100dvh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:max(24px,env(safe-area-inset-top)) 22px max(24px,env(safe-area-inset-bottom));
     }
+    .card{
+      width:100%;
+      max-width:390px;
+      text-align:center;
+    }
+    .icon{
+      width:112px;
+      height:112px;
+      border-radius:24px;
+      display:block;
+      margin:0 auto 18px;
+    }
+    h1{font-size:30px;margin:0 0 8px;letter-spacing:-.6px}
+    p{font-size:15px;line-height:1.45;color:#6b6b70;margin:0 0 22px}
+    a{
+      display:block;
+      width:100%;
+      padding:14px 18px;
+      border-radius:14px;
+      background:#1d1d1f;
+      color:white;
+      text-decoration:none;
+      font-size:16px;
+      font-weight:700;
+    }
+    .hint{font-size:12px;color:#8a8a8f;margin-top:14px}
   </style>
 </head>
 <body>
-  <div class="wrap">Abrindo Anotações…</div>
+  <div class="page">
+    <main class="card">
+      <img class="icon" src="./anotacoes-iphone-180.png" alt="Anotações">
+      <h1>Anotações</h1>
+      <p>Seu espaço rápido para registrar pensamentos, pessoas e assuntos.</p>
+      <a href="https://script.google.com/macros/s/AKfycbyzogSeB7XJhvaPfOFL6yA53YiiJcSMKbeyVlhJ99z-EU4lvXJ2ipss0RgZNA8ePRU/exec">Abrir Anotações</a>
+      <div class="hint">Adicione esta página à Tela de Início antes de abrir o aplicativo.</div>
+    </main>
+  </div>
 </body>
 </html>
